@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import planetImg from '../../assets/images/planet.png';
@@ -7,7 +6,7 @@ import './Navbar.css';
 const Navbar = () => (
   <nav>
     <Link to="/">
-      <img src={planetImg} alt="logo image." />
+      <img src={planetImg} alt="PalnetImage." />
     </Link>
     <div className="links">
       <NavLink className="link" to="/rocket">Rocket</NavLink>
