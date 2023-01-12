@@ -13,7 +13,7 @@ const Navbar = () => (
     <div className="links">
       <NavLink className="link" to="/rocket">Rocket</NavLink>
       <NavLink className="link" to="/mission">Mission</NavLink>
-      <NavLink className="link" to="/profile">My rofile</NavLink>
+      <NavLink className="link" to="/profile">My Profile</NavLink>
     </div>
   </nav>
 );
