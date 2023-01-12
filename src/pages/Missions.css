@@ -1,0 +1,33 @@
+.table {
+  margin: 1% 5%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-collapse: collapse;
+  text-align: left;
+}
+
+td,
+th {
+  border: 0.1px solid rgb(196, 196, 196);
+  padding: 5px;
+}
+
+th {
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(241, 241, 241);
+}
+
+.mission-status {
+  width: 10%;
+}
+
+.mission-action {
+  width: 10%;
+}
+
+.mission-name {
+  font-weight: 600;
+}
