@@ -9,8 +9,19 @@ nav a.active {
   font-weight: bold;
 }
 
+.main-link {
+  display: flex;
+  gap: 50px;
+  text-decoration: none;
+}
+
+.main-link h1 {
+  font-size: 32px;
+}
+
 img {
-  width: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .links {
