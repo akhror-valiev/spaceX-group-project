@@ -5,9 +5,9 @@ import './Navbar.css';
 
 const Navbar = () => (
   <nav>
-    <Link to="/" className='logo'>
+    <Link to="/" className="logo">
       <img src={planetImg} alt="PalnetImage." />
-      <p className='logo-text'>Space Traveler's Hub</p>
+      <p className="logo-text">Space Travelers Hub</p>
     </Link>
     <div className="links">
       <NavLink className="link" to="/rocket">Rocket</NavLink>

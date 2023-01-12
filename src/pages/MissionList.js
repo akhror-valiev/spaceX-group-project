@@ -1,15 +1,8 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import './Missions.css'
+import React from 'react';
+import './Missions.css';
 
-const MissionList = ({ id, name, description }) => {
-    return (
-        <tr >
-           <td>{name}</td>
-           <td>{description}</td>
-           <td>***</td>
-        </tr>
-    )
-}
+const MissionList = () => (
+  <div>mission list</div>
+);
 
 export default MissionList;
