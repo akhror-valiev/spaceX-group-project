@@ -5,13 +5,14 @@ import './Navbar.css';
 
 const Navbar = () => (
   <nav>
-    <Link to="/">
+    <Link to="/" className='logo'>
       <img src={planetImg} alt="PalnetImage." />
+      <p className='logo-text'>Space Traveler's Hub</p>
     </Link>
     <div className="links">
       <NavLink className="link" to="/rocket">Rocket</NavLink>
       <NavLink className="link" to="/mission">Mission</NavLink>
-      <NavLink className="link" to="/profile">My rofile</NavLink>
+      <NavLink className="link" to="/profile">My Profile</NavLink>
     </div>
   </nav>
 );
