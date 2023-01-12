@@ -1,0 +1,35 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav a.active {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-link {
+  display: flex;
+  gap: 50px;
+  text-decoration: none;
+}
+
+.main-link h1 {
+  font-size: 32px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+  font-size: 24px;
+}
+
+.link {
+  display: flex;
+}

@@ -1,0 +1,37 @@
+.rocket-li {
+  display: flex;
+}
+
+.rocket-img {
+  width: 480px;
+  height: 350px;
+}
+
+.rocket-container {
+  margin-top: -25px;
+  padding: 0 50px 60px 60px;
+}
+
+.rocket-container p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.reserve-btn {
+  padding: 1rem;
+  background-color: #017bfe;
+  border: none;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cancel-btn {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid grey;
+  color: grey;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

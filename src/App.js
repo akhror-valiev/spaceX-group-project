@@ -1,7 +1,6 @@
 import {
   Routes,
   Route,
-  BrowserRouter,
 
 } from 'react-router-dom';
 import React from 'react';
@@ -13,6 +12,7 @@ import Navbar from './components/Navbar/Navbar';
 import store from './redux/configureStore';
 
 const App = () => (
+<<<<<<< HEAD
   <BrowserRouter>
     <Provider store={store}>
       <Navbar />
@@ -23,6 +23,17 @@ const App = () => (
       </Routes>
     </Provider>
   </BrowserRouter>
+=======
+  <>
+    <Navbar />
+    <Routes>
+      <Route path="rocket" element={<Rocket />} />
+      <Route path="mission" element={<Mission />} />
+      <Route path="profile" element={<MyProfile />} />
+    </Routes>
+  </>
+
+>>>>>>> development
 );
 
 export default App;
