@@ -35,8 +35,8 @@ const fetchMissions = () => async (dispatch) => {
     mission_name: mission.mission_name,
     description: mission.description,
     reserved: false,
-  }));
 
+  }));
   dispatch(loadMissions(missions));
 };
 

@@ -8,12 +8,7 @@ const Mission = () => {
   const missions = useSelector((state) => state.missions);
 
   return (
-    <Table>
-
-
-  return (
     <Table className="table">
-
       <thead>
         <tr>
           <th className="mission-name">Name</th>
@@ -29,11 +24,8 @@ const Mission = () => {
             name={mission.mission_name}
             description={mission.description}
             key={mission.mission_id}
-
             id={mission.mission_id}
             reserved={mission.reserved}
-
-
           />
         ))}
       </tbody>

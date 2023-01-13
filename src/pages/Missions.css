@@ -2,7 +2,6 @@
   margin: 1% 5%;
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.5);
-
   border-collapse: collapse;
   text-align: left;
 }
@@ -76,7 +75,6 @@ tr:nth-child(odd) {
   border-radius: 5px;
   color: white;
   padding: 1px 5px;
-=======
 
   /* border: 1px solid #ccc; */
   text-align: left;
@@ -85,13 +83,4 @@ tr:nth-child(odd) {
 .mission-list {
   padding: 20px;
   text-align: left;
-}
-
-.mission-status {
-  width: 15%;
-}
-
-.mission-action {
-  width: 15%;
-
 }
