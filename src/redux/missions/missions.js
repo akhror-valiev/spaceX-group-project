@@ -1,9 +1,9 @@
+import missionData from '../../pages/missionsData';
+
 const FETCH_MISSION = 'spacex/missions/FETCH_MISSION';
 const JOIN_MISSION = 'spacex/missions/JOIN_MISSION';
 const LEAVE_MISSION = 'spacex/missions/LEAVE_MISSION';
 
-// api url
-const baseURL = 'https://api.spacexdata.com/v3/missions';
 const initialState = [];
 
 // ACTIONS
@@ -27,10 +27,10 @@ export const leaveMission = (id) => ({
 });
 
 const fetchMissions = () => async (dispatch) => {
-  const response = await fetch(baseURL);
-  const data = await response.json();
+  // const response = await fetch(baseURL);
+  // const data = missionData
 
-  const missions = data.map((mission) => ({
+  const missions = missionData.map((mission) => ({
     mission_id: mission.mission_id,
     mission_name: mission.mission_name,
     description: mission.description,
