@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import { Button, Badge } from 'react-bootstrap';
@@ -48,3 +49,11 @@ MissionList.propTypes = {
   reserved: PropTypes.bool.isRequired,
   id: PropTypes.string.isRequired,
 };
+=======
+import './Missions.css';
+
+const MissionList = () => (
+  <div>mission list</div>
+);
+
+export default MissionList;
