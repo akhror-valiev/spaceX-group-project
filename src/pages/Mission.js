@@ -24,6 +24,8 @@ const Mission = () => {
             name={mission.mission_name}
             description={mission.description}
             key={mission.mission_id}
+            id={mission.mission_id}
+            reserved={mission.reserved}
           />
         ))}
       </tbody>

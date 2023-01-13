@@ -2,6 +2,79 @@
   margin: 1% 5%;
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.5);
+  border-collapse: collapse;
+  text-align: left;
+}
+
+td,
+th {
+  border: 0.1px solid rgb(196, 196, 196);
+  padding: 5px;
+}
+
+th {
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(241, 241, 241);
+}
+
+.mission-status {
+  width: 11%;
+}
+
+.mission-desc {
+  font-size: 0.9em;
+}
+
+.mission-action {
+  width: 11%;
+}
+
+.mission-name {
+  font-weight: 600;
+}
+
+.leave-mission {
+  background-color: rgb(233, 31, 31);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 3px 5px;
+}
+
+.join-mission {
+  background-color: rgb(32, 181, 109);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 3px 5px;
+}
+
+.badge-size {
+  padding: 5px;
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info {
+  background-color: rgb(86, 86, 86);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 1px 5px;
+}
+
+.secondary {
+  background-color: rgb(99, 106, 233);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 1px 5px;
 
   /* border: 1px solid #ccc; */
   text-align: left;
@@ -10,12 +83,4 @@
 .mission-list {
   padding: 20px;
   text-align: left;
-}
-
-.mission-status {
-  width: 15%;
-}
-
-.mission-action {
-  width: 15%;
 }
