@@ -2,43 +2,46 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './RocketItem.css';
+import { useDispatch } from 'react-redux';
+import { reserveAction } from '../../redux/rocketSlice';
 
 const RocketItem = ({
-  flickr_images,
-  rocket_name,
+  image,
+  name,
   description,
-  reserved = false,
-}) => (
-  <li className="rocket-li">
-    <img className="rocket-img" src={flickr_images[0]} alt="rocket-img" />
-    <div className="rocket-container">
-      <h1 className="rocket-name">{rocket_name}</h1>
-      <p className="rocket-desc">
-        {reserved ? <span className="Rocket__reserved">Reserved</span> : null}
-        {description}
-      </p>
-      {reserved ? (
-        <button type="button" className="cancel-btn">
-          Cancel Reservation
-        </button>
-      ) : (
-        <button type="button" className="reserve-btn">
-          Reserve Rocket
-        </button>
-      )}
-    </div>
-  </li>
-);
-
-RocketItem.propTypes = {
-  rocket_name: PropTypes.string.isRequired,
-  flickr_images: PropTypes.arrayOf(PropTypes.string).isRequired,
-  description: PropTypes.string.isRequired,
-  reserved: PropTypes.bool.isRequired,
+  reserved,
+  id,
+}) => {
+  const dispatch = useDispatch();
+  return (
+    <li className="rocket-li">
+      <img className="rocket-img" src={image} alt="rocket-img" />
+      <div className="rocket-container">
+        <h1 className="rocket-name">{name}</h1>
+        <p className="rocket-desc">
+          {reserved && <span className="Rocket__reserved">Reserved</span>}
+          {description}
+        </p>
+        {reserved ? (
+          <button onClick={() => dispatch(reserveAction(id))} type="button" className="cancel-btn">
+            Cancel Reservation
+          </button>
+        ) : (
+          <button onClick={() => dispatch(reserveAction(id))} type="button" className="reserve-btn">
+            Reserve Rocket
+          </button>
+        )}
+      </div>
+    </li>
+  );
 };
 
-RocketItem.default = {
-  reserved: true,
+RocketItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.arrayOf(PropTypes.string).isRequired,
+  description: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default RocketItem;

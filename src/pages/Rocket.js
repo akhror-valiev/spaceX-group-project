@@ -5,23 +5,30 @@ import { getRockets } from '../redux/rocketSlice';
 import RocketItem from '../components/RocketItem/RocketItem';
 import './Rocket.css';
 
+let loadFirstTime = false;
+
 const Rocket = () => {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockReducer);
 
   useEffect(() => {
-    dispatch(getRockets());
+    if (!loadFirstTime) {
+      dispatch(getRockets());
+      loadFirstTime = true;
+    }
   }, [dispatch]);
   return (
     <ul className="rocket-ul">
       {
         rockets.map(({
-          flickr_images, rocket_name, description, id,
+          image, name, description, id, reserved,
         }) => (
           <RocketItem
+            id={id}
             key={id}
-            flickr_images={flickr_images}
-            rocket_name={rocket_name}
+            image={image}
+            name={name}
+            reserved={reserved}
             description={description}
           />
         ))
