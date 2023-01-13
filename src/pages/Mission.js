@@ -6,14 +6,15 @@ import './Missions.css';
 
 const Mission = () => {
   const missions = useSelector((state) => state.missions);
-
   return (
-    <Table striped>
+    <Table>
       <thead>
-        <th className="mission-name">Name</th>
-        <th className="mission-description">Description</th>
-        <th className="mission-status">Status</th>
-        <th className="mission-action">Action</th>
+        <tr>
+          <th className="mission-name">Name</th>
+          <th className="mission-description">Description</th>
+          <th className="mission-status">Status</th>
+          <th className="mission-action">Action</th>
+        </tr>
       </thead>
       <tbody>
         {missions.map((mission) => (
@@ -22,6 +23,8 @@ const Mission = () => {
             name={mission.mission_name}
             description={mission.description}
             key={mission.mission_id}
+            id={mission.mission_id}
+            reserved={mission.reserved}
           />
         ))}
       </tbody>

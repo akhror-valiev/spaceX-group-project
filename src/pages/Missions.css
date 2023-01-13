@@ -21,13 +21,58 @@ tr:nth-child(odd) {
 }
 
 .mission-status {
-  width: 10%;
+  width: 11%;
+}
+
+.mission-desc {
+  font-size: 0.9em;
 }
 
 .mission-action {
-  width: 10%;
+  width: 11%;
 }
 
 .mission-name {
   font-weight: 600;
+}
+
+.leave-mission {
+  background-color: rgb(233, 31, 31);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 3px 5px;
+}
+
+.join-mission {
+  background-color: rgb(32, 181, 109);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 3px 5px;
+}
+
+.badge-size {
+  padding: 5px;
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info {
+  background-color: rgb(86, 86, 86);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 1px 5px;
+}
+
+.secondary {
+  background-color: rgb(99, 106, 233);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 1px 5px;
 }
