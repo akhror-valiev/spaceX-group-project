@@ -27,8 +27,6 @@ export const leaveMission = (id) => ({
 });
 
 const fetchMissions = () => async (dispatch) => {
-  
-
   const missions = missionData.map((mission) => ({
     mission_id: mission.mission_id,
     mission_name: mission.mission_name,
