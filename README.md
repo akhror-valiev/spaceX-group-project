@@ -106,7 +106,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo" />
 
-- [Live Demo Link]()
+- [Live Demo Link](https://chic-crepe-c605d4.netlify.app/)
 
 ## 💻 Getting Started <a name="getting-started" />
 
