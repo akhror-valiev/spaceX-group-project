@@ -17,7 +17,7 @@ export const getRockets = () => (dispatch) => {
   FetchRocketApi().then((data) => {
     const rockets = data.map((rocket) => ({
       id: rocket.id,
-      name: rocket.rocket_name,
+      name: rocket.name,
       description: rocket.description,
       image: rocket.flickr_images[0],
       reserved: false,
