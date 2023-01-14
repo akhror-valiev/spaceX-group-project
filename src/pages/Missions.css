@@ -1,19 +1,18 @@
 .table {
-  margin: 1% 5%;
-  padding: 5px;
+  margin: 2% 5%;
+  padding: 0;
   background-color: rgba(255, 255, 255, 0.5);
-  border-collapse: collapse;
   text-align: left;
 }
 
 td,
 th {
   border: 0.1px solid rgb(196, 196, 196);
-  padding: 5px;
+  padding: 50px;
 }
 
 th {
-  padding: 5px;
+  padding: 10px;
 }
 
 tr:nth-child(odd) {
@@ -25,7 +24,7 @@ tr:nth-child(odd) {
 }
 
 .mission-desc {
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 
 .mission-action {
@@ -34,6 +33,7 @@ tr:nth-child(odd) {
 
 .mission-name {
   font-weight: 600;
+  width: 9%;
 }
 
 .leave-mission {
@@ -41,7 +41,7 @@ tr:nth-child(odd) {
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 3px 5px;
+  padding: 5px 10px;
 }
 
 .join-mission {
@@ -49,11 +49,11 @@ tr:nth-child(odd) {
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 3px 5px;
+  padding: 5px 10px;
 }
 
 .badge-size {
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 0.7em;
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@ tr:nth-child(odd) {
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 1px 5px;
+  padding: 5px 10px;
 }
 
 .secondary {
@@ -74,7 +74,7 @@ tr:nth-child(odd) {
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 1px 5px;
+  padding: 5px 10px;
 
   /* border: 1px solid #ccc; */
   text-align: left;

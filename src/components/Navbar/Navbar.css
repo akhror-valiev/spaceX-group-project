@@ -1,7 +1,9 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0 20px;
+  border-bottom: 1px solid gray;
+  align-items: center;
 }
 
 nav a.active {
@@ -20,8 +22,8 @@ nav a.active {
 }
 
 img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .links {

@@ -16,10 +16,11 @@ const App = () => (
   <div className="main-container">
     <Navbar />
     <Routes>
-      <Route path="rocket" element={<Rocket />} />
+      <Route path="/" element={<Rocket />} />
       <Route path="mission" element={<Mission />} />
       <Route path="profile" element={<MyProfile />} />
     </Routes>
+
   </div>
 
 );
