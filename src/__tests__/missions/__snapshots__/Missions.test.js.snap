@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot for Mission component 1`] = `
+<tr
+  className="mission-list"
+>
+  <td
+    className="mission-name"
+  />
+  <td
+    className="mission-desc"
+  />
+  <td
+    className="mission"
+  >
+    <span
+      className="badge-size secondary badge bg-primary"
+    >
+      Not A Member
+    </span>
+  </td>
+  <td
+    className="mission"
+  >
+    <button
+      className="join-mission btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </td>
+</tr>
+`;
