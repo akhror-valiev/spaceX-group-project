@@ -7,6 +7,8 @@ import './Missions.css';
 const Mission = () => {
   const missions = useSelector((state) => state.missions);
 
+  // console.log(missions)
+
   return (
     <Table className="table">
       <thead>
